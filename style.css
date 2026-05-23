@@ -1,0 +1,70 @@
+/* Warna tema: navy gelap, putih, emas/oranye */
+:root {
+  --navy-dark: #0a192f;
+  --gold: #D4AF37;
+  --gold-light: #F5D76E;
+  --orange-accent: #E67E22;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+.text-gold {
+  color: var(--gold);
+}
+
+.bg-gold {
+  background-color: var(--gold);
+}
+
+.bg-navy-dark {
+  background-color: var(--navy-dark);
+}
+
+.text-navy-dark {
+  color: var(--navy-dark);
+}
+
+.border-gold {
+  border-color: var(--gold);
+}
+
+.hover\:bg-gold:hover {
+  background-color: var(--gold);
+}
+
+/* Tombol custom */
+.btn-gold {
+  background: linear-gradient(135deg, var(--gold) 0%, var(--orange-accent) 100%);
+  transition: all 0.3s ease;
+}
+.btn-gold:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px -5px rgba(212, 175, 55, 0.4);
+}
+
+/* efek backdrop hero (canvas gelembung) */
+#hero-canvas canvas {
+  display: block;
+  object-fit: cover;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* animasi smooth untuk card */
+.group:hover .group-hover\:scale-105 {
+  transform: scale(1.05);
+}
+
+/* custom scroll */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 10px;
+}
